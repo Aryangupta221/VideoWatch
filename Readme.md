@@ -1,120 +1,90 @@
-# 🎥 Streamify
+# 🎥 VidSync - AI-Powered Video Streaming App 🚀  
 
-### Welcome to Streamify! This is a Youtube-like platform where users can view, upload and share videos. The frontend is built using react and backend is powered by Node.js. It's a complete MERN application.
+**Live Demo:** [VidSync](https://video-client-chi.vercel.app/)  
 
-## 🚧 Project Status
+## 📢 About VidSync  
+VidSync is a cutting-edge **video streaming platform** that allows users to **watch, upload, and share videos** seamlessly. It features **AI-powered recommendations**, a **user-friendly interface**, and **real-time engagement tools**. Built with **React (Vite) for the frontend** and **Node.js + Express for the backend**, it delivers a smooth and dynamic experience.  
 
-### The project is complete but new features and improvements can be added gradually.
+---
 
-## 🚀 Features
+## 🚀 Features  
 
--   📹 **Upload Videos**: Share your videos with the world.
--   🎥 **Watch Videos**: Enjoy videos uploaded by others.
--   🐦 **Tweets**: Make announcements for everyone.
--   👍 **Like**: Leave a thumbs up to videos, comments and tweets you like.
--   💬 **Comment**: Share your thoughts about the video.
--   📺 **Subscriptions**: Get videos from channels you subscribe to.
--   🕒 **History**: Revisit the videos you have watced.
--   🔍 **Search**: Find videos by keywords.
--   📂 **My Content**: Manage all your content in one place.
--   🛠 **Admin Panel**: Manage your channel and videos.
--   ⚙️ **Settings**: Update your personal and channel information and password.
+- 📹 **Upload Videos**: Share your content with the world.  
+- 🎥 **AI-Powered Recommendations**: Get personalized video suggestions.  
+- 🔍 **Smart Search**: Find videos based on titles, tags, and categories.  
+- 🏆 **Like & Comment System**: Engage with your favorite creators.  
+- 🔔 **Subscriptions**: Follow creators and never miss an update.  
+- 🕒 **Watch History**: Easily find previously watched videos.  
+- ⚙️ **User Profiles & Settings**: Manage your channel and preferences.  
+- ☁️ **Cloud Storage**: Upload videos securely with Cloudinary.  
+- 🔑 **Secure Authentication**: Register and log in with JWT-based auth.  
 
-## 🛠️ Technologies Used
+---
 
--   **Frontend**:
+## 🛠️ Tech Stack  
 
-    -   React
-    -   Redux Toolkit
-    -   Tailwind CSS
-    -   Axios
-    -   React Router Dom
-    -   React Redux
-    -   React Hook Form
-    -   React Toastify
-    -   React Infinite Scroll
-    -   React Icons
+### **Frontend (Client)**  
+- React (Vite)  
+- Redux Toolkit  
+- Tailwind CSS  
+- Axios  
+- React Router  
+- React Toastify  
+- React Infinite Scroll  
 
--   **Backend**:
-    -   Node.js
-    -   Express
-    -   MongoDB
-    -   Cloudinary
-    -   Multer
-    -   JWT (JSON Web Tokens)
-    -   Bcrypt (Hashing password)
+### **Backend (Server)**  
+- Node.js  
+- Express  
+- MongoDB (Mongoose)  
+- Cloudinary  
+- Multer  
+- JWT (JSON Web Tokens)  
+- Bcrypt (Secure Password Hashing)  
 
-## 🔗 Important Links
+---
 
-| Content           | Link                                                                             |
-| ----------------- | -------------------------------------------------------------------------------- |
-| Live Link         | [click here ](https://streamify-video-streaming.vercel.app)                      |
-| API Documentation | [click here ](https://documenter.getpostman.com/view/18766081/2sAXxP9CHB)        |
-| Model             | [click here ](https://app.eraser.io/workspace/cATefMPkrAdzR9c6teox?origin=share) |
-| Figma Design      | [click here ](https://www.figma.com/design/shmxWL5FKRO5GNOPPopBg6/PLAY)          |
+## 🔗 Important Links  
 
-## 🏗️ Installation
+| Content           | Link                                              |
+| ----------------- | ------------------------------------------------ |
+| **Live App**      | [VidSync](https://video-client-chi.vercel.app/)  |
+| **GitHub Repo**   | [Click Here](https://github.com/Aryangupta221/VideoWatch)  |
 
-### Prerequisites
+---
 
--   Node.js
--   npm (Node Package Manager)
--   MongoDB
+## 🏗️ Installation Guide  
 
-### Setup
+### **Prerequisites**  
+- Node.js  
+- npm (Node Package Manager)  
+- MongoDB  
 
-1. **Clone the repository**:
+### **Setup**  
 
-    ```bash
-    git clone https://github.com/Sameer0820/Video-Streaming-App.git
-    ```
+cd server
+npm install
 
-2. **Install dependencies**:
+cd client
+npm install
+Create a .env file inside the server/ directory:
+PORT=4000
+MONGODB_URI=your_mongodb_uri
+CORS_ORIGIN=https://video-client-chi.vercel.app
+ACCESS_TOKEN_SECRET=your_access_token_secret
+REFRESH_TOKEN_SECRET=your_refresh_token_secret
+CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+4️⃣ Run the backend
+cd server
+npm run dev
+5️⃣ Run the frontend
+cd client
+npm run dev
+🤝 Contributing
+Contributions are welcome! Please fork the repository and submit a pull request.
 
-    ```bash
-    cd server
-    npm install
-    ```
-
-    ```bash
-    cd client
-    npm install
-    ```
-
-3. **Setup environment variables**:
-   Create a `.env` file in server directory and add the following:
-
-    ```env
-    PORT=your_port_number
-    MONGODB_URI=your_mongodb_uri
-    CORS_ORIGIN=*
-    ACCESS_TOKEN_SECRET=your_access_token_secret
-    ACCESS_TOKEN_EXPIRY=1d
-    REFRESH_TOKEN_SECRET=your_refresh_token_secret
-    REFRESH_TOKEN_EXPIRY=10d
-    CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
-    CLOUDINARY_API_KEY=your_cloudinary_api_key
-    CLOUDINARY_API_SECRET=your_cloudinary_api_secret
-    ```
-
-4. **Run the backend**:
-    ```bash
-    cd server
-    npm run dev
-    ```
-
-5. **Run the frontend**:
-   ```bash
-   cd client
-   npm run dev
-   ```
-
-## 🤝 Contributing
-
-Contributions are welcome! Please fork the repository and create a pull request.
-
-## Contact
-
+📧 Contact
 For any questions or feedback, feel free to reach out:
+📩 Email: aryangupta10112@gmail.com
 
-- Email: sameerraj0820@gmail.com
